@@ -36,3 +36,4 @@ sudo docker-compose up --build -d
 ```
 
 Then visit `http://<ec2-public-ip>/`.
+# Automated Deployment Active!
