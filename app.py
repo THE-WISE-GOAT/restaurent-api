@@ -20,13 +20,10 @@ def home(request: Request):
     all_orders = orders.all()
 
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "orders": all_orders
-        }
-    )
-
+    request=request, 
+    name="index.html", 
+    context={"orders": orders}
+)
 
 # Add new order
 @app.post("/orders")
