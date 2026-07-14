@@ -30,5 +30,5 @@ jobs:
             git pull origin main
           fi
           
-          # 3. Restart the container with the fresh changes
-          sudo docker-compose up --build -d
+          # 3. Restart the container with the fresh changes (Using modern Docker v2 syntax)
+          sudo docker compose up --build -d
