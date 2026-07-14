@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  restaurant_api:
+    build: .
+    ports:
+      - "80:80"
+    volumes:
+      - ./orders.json:/app/orders.json
+    restart: always
